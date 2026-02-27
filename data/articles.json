@@ -1,0 +1,2352 @@
+[
+  {
+    "Article_ID": "ART-0001",
+    "Raw_Name": "Chicken Breast",
+    "Brand": "Picnic",
+    "Price": 4.50,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Fresh chicken breast fillet, perfect for pan-frying or baking.",
+    "Price_Per_Unit": 0.0090
+  },
+  {
+    "Article_ID": "ART-0002",
+    "Raw_Name": "Organic Chicken Breast",
+    "Brand": "Picnic Organic",
+    "Price": 7.99,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium organic free-range chicken breast.",
+    "Price_Per_Unit": 0.0159
+  },
+  {
+    "Article_ID": "ART-0003",
+    "Raw_Name": "Olive Oil (Extra Virgin)",
+    "Brand": "Picnic",
+    "Price": 7.49,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "ml",
+    "Description": "Cold-pressed oil ideal for dressings and low-heat cooking.",
+    "Price_Per_Unit": 0.0149
+  },
+  {
+    "Article_ID": "ART-0004",
+    "Raw_Name": "White Onion",
+    "Brand": "Picnic",
+    "Price": 1.25,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Essential cooking base for soups, stews, and sauteing.",
+    "Price_Per_Unit": 0.0012
+  },
+  {
+    "Article_ID": "ART-0005",
+    "Raw_Name": "Cucumber",
+    "Brand": "Dutch Green",
+    "Price": 0.85,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Freshly harvested cucumber from local greenhouses. (1 piece)",
+    "Price_Per_Unit": 0.0021
+  },
+  {
+    "Article_ID": "ART-0006",
+    "Raw_Name": "Fresh Parsley",
+    "Brand": "Picnic",
+    "Price": 1.39,
+    "Quantity_Value": 30.0,
+    "Quantity_Unit": "g",
+    "Description": "Flat-leaf herb used to garnish and flavor various Mediterranean dishes.",
+    "Price_Per_Unit": 0.0463
+  },
+  {
+    "Article_ID": "ART-0007",
+    "Raw_Name": "Tortilla Wraps",
+    "Brand": "Picnic",
+    "Price": 1.85,
+    "Quantity_Value": 370.0,
+    "Quantity_Unit": "g",
+    "Description": "Large flour wraps suitable for cold lunches or warm burritos. 6 pack.",
+    "Price_Per_Unit": 0.0050
+  },
+  {
+    "Article_ID": "ART-0008",
+    "Raw_Name": "Fine Sea Salt",
+    "Brand": "Jozo",
+    "Price": 0.99,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Fine sea salt for everyday cooking and seasoning.",
+    "Price_Per_Unit": 0.0019
+  },
+  {
+    "Article_ID": "ART-0009",
+    "Raw_Name": "Gouda Cheese (Jong Belegen)",
+    "Brand": "Picnic",
+    "Price": 4.50,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Classic Dutch semi-mature cheese sliced for sandwiches.",
+    "Price_Per_Unit": 0.0112
+  },
+  {
+    "Article_ID": "ART-0010",
+    "Raw_Name": "Tomato Ketchup",
+    "Brand": "Heinz",
+    "Price": 2.15,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "ml",
+    "Description": "Iconic tomato sauce made from sun-ripened tomatoes.",
+    "Price_Per_Unit": 0.0043
+  },
+  {
+    "Article_ID": "ART-0011",
+    "Raw_Name": "Garlic",
+    "Brand": "Picnic",
+    "Price": 0.99,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Fresh garlic bulbs for aromatic cooking.",
+    "Price_Per_Unit": 0.0039
+  },
+  {
+    "Article_ID": "ART-0012",
+    "Raw_Name": "Red Bell Pepper",
+    "Brand": "Picnic",
+    "Price": 0.95,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Sweet and crisp red bell pepper.",
+    "Price_Per_Unit": 0.0047
+  },
+  {
+    "Article_ID": "ART-0013",
+    "Raw_Name": "Yellow Onion",
+    "Brand": "Picnic",
+    "Price": 1.15,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard yellow onions for a variety of dishes.",
+    "Price_Per_Unit": 0.0011
+  },
+  {
+    "Article_ID": "ART-0014",
+    "Raw_Name": "Roma Tomatoes",
+    "Brand": "Picnic",
+    "Price": 1.75,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Plum tomatoes perfect for making sauces and salads.",
+    "Price_Per_Unit": 0.0035
+  },
+  {
+    "Article_ID": "ART-0015",
+    "Raw_Name": "Cherry Tomatoes",
+    "Brand": "Picnic",
+    "Price": 1.49,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Small and sweet tomatoes perfect for snacking.",
+    "Price_Per_Unit": 0.0059
+  },
+  {
+    "Article_ID": "ART-0016",
+    "Raw_Name": "Avocado (Ready to Eat)",
+    "Brand": "Picnic",
+    "Price": 1.49,
+    "Quantity_Value": 180.0,
+    "Quantity_Unit": "g",
+    "Description": "Perfectly ripe avocado with a creamy texture.",
+    "Price_Per_Unit": 0.0082
+  },
+  {
+    "Article_ID": "ART-0017",
+    "Raw_Name": "Lemon",
+    "Brand": "Picnic",
+    "Price": 0.65,
+    "Quantity_Value": 120.0,
+    "Quantity_Unit": "g",
+    "Description": "Fresh lemon for juice and zest.",
+    "Price_Per_Unit": 0.0054
+  },
+  {
+    "Article_ID": "ART-0018",
+    "Raw_Name": "Lime",
+    "Brand": "Picnic",
+    "Price": 0.55,
+    "Quantity_Value": 80.0,
+    "Quantity_Unit": "g",
+    "Description": "Zesty lime, great for cocktails and cooking.",
+    "Price_Per_Unit": 0.0068
+  },
+  {
+    "Article_ID": "ART-0019",
+    "Raw_Name": "Bananas",
+    "Brand": "Chiquita",
+    "Price": 1.89,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Sweet and energy-rich fruit.",
+    "Price_Per_Unit": 0.0018
+  },
+  {
+    "Article_ID": "ART-0020",
+    "Raw_Name": "Elstar Apples",
+    "Brand": "Picnic",
+    "Price": 2.99,
+    "Quantity_Value": 1500.0,
+    "Quantity_Unit": "g",
+    "Description": "A popular Dutch apple variety known for crisp taste.",
+    "Price_Per_Unit": 0.0019
+  },
+  {
+    "Article_ID": "ART-0021",
+    "Raw_Name": "Strawberries",
+    "Brand": "Picnic",
+    "Price": 3.49,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Sweet and juicy fresh strawberries.",
+    "Price_Per_Unit": 0.0087
+  },
+  {
+    "Article_ID": "ART-0022",
+    "Raw_Name": "Blueberries",
+    "Brand": "Picnic",
+    "Price": 3.99,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Antioxidant-rich fresh blueberries.",
+    "Price_Per_Unit": 0.0159
+  },
+  {
+    "Article_ID": "ART-0023",
+    "Raw_Name": "Whole Milk",
+    "Brand": "Picnic House Brand",
+    "Price": 1.15,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "ml",
+    "Description": "Fresh whole milk sourced directly from local farmers.",
+    "Price_Per_Unit": 0.0011
+  },
+  {
+    "Article_ID": "ART-0024",
+    "Raw_Name": "Semi-Skimmed Milk",
+    "Brand": "Picnic House Brand",
+    "Price": 1.09,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "ml",
+    "Description": "A lighter milk option perfect for daily breakfast.",
+    "Price_Per_Unit": 0.0010
+  },
+  {
+    "Article_ID": "ART-0025",
+    "Raw_Name": "Organic Eggs",
+    "Brand": "Picnic Organic",
+    "Price": 3.49,
+    "Quantity_Value": 10.0,
+    "Quantity_Unit": "piece",
+    "Description": "Large organic eggs from free-range chickens.",
+    "Price_Per_Unit": 0.3490
+  },
+  {
+    "Article_ID": "ART-0026",
+    "Raw_Name": "Free Range Eggs",
+    "Brand": "Rondeel",
+    "Price": 2.89,
+    "Quantity_Value": 10.0,
+    "Quantity_Unit": "piece",
+    "Description": "High welfare free-range eggs.",
+    "Price_Per_Unit": 0.2890
+  },
+  {
+    "Article_ID": "ART-0027",
+    "Raw_Name": "Greek Yogurt",
+    "Brand": "Picnic",
+    "Price": 2.19,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Thick and creamy yogurt ideal for breakfast.",
+    "Price_Per_Unit": 0.0043
+  },
+  {
+    "Article_ID": "ART-0028",
+    "Raw_Name": "Salted Butter",
+    "Brand": "Campina",
+    "Price": 2.89,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Traditional creamy Dutch butter with a touch of sea salt.",
+    "Price_Per_Unit": 0.0115
+  },
+  {
+    "Article_ID": "ART-0029",
+    "Raw_Name": "Unsalted Butter",
+    "Brand": "Picnic",
+    "Price": 2.49,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Unsalted butter, perfect for baking and cooking.",
+    "Price_Per_Unit": 0.0099
+  },
+  {
+    "Article_ID": "ART-0030",
+    "Raw_Name": "Whipped Cream",
+    "Brand": "Picnic",
+    "Price": 1.65,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "ml",
+    "Description": "Fresh liquid cream ready for whipping.",
+    "Price_Per_Unit": 0.0066
+  },
+  {
+    "Article_ID": "ART-0031",
+    "Raw_Name": "Margarine",
+    "Brand": "Blue Band",
+    "Price": 1.35,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "A plant-based spread fortified with vitamins.",
+    "Price_Per_Unit": 0.0027
+  },
+  {
+    "Article_ID": "ART-0032",
+    "Raw_Name": "Spaghetti",
+    "Brand": "Picnic",
+    "Price": 0.95,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Classic durum wheat pasta for Italian dinners.",
+    "Price_Per_Unit": 0.0019
+  },
+  {
+    "Article_ID": "ART-0033",
+    "Raw_Name": "Penne Rigate",
+    "Brand": "Barilla",
+    "Price": 1.89,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "High quality Italian penne pasta.",
+    "Price_Per_Unit": 0.0037
+  },
+  {
+    "Article_ID": "ART-0034",
+    "Raw_Name": "Basmati Rice",
+    "Brand": "Picnic",
+    "Price": 1.75,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Long-grain aromatic rice that stays fluffy.",
+    "Price_Per_Unit": 0.0017
+  },
+  {
+    "Article_ID": "ART-0035",
+    "Raw_Name": "Jasmine Rice",
+    "Brand": "Lassie",
+    "Price": 2.15,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Fragrant Thai jasmine rice.",
+    "Price_Per_Unit": 0.0053
+  },
+  {
+    "Article_ID": "ART-0036",
+    "Raw_Name": "Whole Wheat Bread",
+    "Brand": "Picnic Bakery",
+    "Price": 1.45,
+    "Quantity_Value": 800.0,
+    "Quantity_Unit": "g",
+    "Description": "Daily baked brown bread with high fiber content.",
+    "Price_Per_Unit": 0.0018
+  },
+  {
+    "Article_ID": "ART-0037",
+    "Raw_Name": "White Bread (Casino)",
+    "Brand": "Picnic Bakery",
+    "Price": 1.39,
+    "Quantity_Value": 800.0,
+    "Quantity_Unit": "g",
+    "Description": "Soft white sliced bread perfect for toasted sandwiches.",
+    "Price_Per_Unit": 0.0017
+  },
+  {
+    "Article_ID": "ART-0038",
+    "Raw_Name": "Butter Croissants",
+    "Brand": "Picnic",
+    "Price": 1.99,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Flaky French-style croissants baked fresh. 4 pack.",
+    "Price_Per_Unit": 0.0099
+  },
+  {
+    "Article_ID": "ART-0039",
+    "Raw_Name": "Oatmeal",
+    "Brand": "Picnic",
+    "Price": 1.10,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "100% whole grain oats for a healthy breakfast.",
+    "Price_Per_Unit": 0.0022
+  },
+  {
+    "Article_ID": "ART-0040",
+    "Raw_Name": "All-Purpose Flour",
+    "Brand": "Picnic",
+    "Price": 0.85,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard wheat flour for baking and cooking.",
+    "Price_Per_Unit": 0.0008
+  },
+  {
+    "Article_ID": "ART-0041",
+    "Raw_Name": "Granulated Sugar",
+    "Brand": "Van Gilse",
+    "Price": 1.19,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Fine white sugar for baking and sweetening beverages.",
+    "Price_Per_Unit": 0.0011
+  },
+  {
+    "Article_ID": "ART-0042",
+    "Raw_Name": "Brown Sugar",
+    "Brand": "Van Gilse",
+    "Price": 1.45,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Light brown sugar with a subtle caramel flavor.",
+    "Price_Per_Unit": 0.0029
+  },
+  {
+    "Article_ID": "ART-0043",
+    "Raw_Name": "Black Pepper (Ground)",
+    "Brand": "Verstegen",
+    "Price": 2.15,
+    "Quantity_Value": 40.0,
+    "Quantity_Unit": "g",
+    "Description": "Finely ground black pepper to add warmth to dishes.",
+    "Price_Per_Unit": 0.0537
+  },
+  {
+    "Article_ID": "ART-0044",
+    "Raw_Name": "Paprika Powder",
+    "Brand": "Picnic",
+    "Price": 1.49,
+    "Quantity_Value": 40.0,
+    "Quantity_Unit": "g",
+    "Description": "Sweet paprika powder for vibrant color and flavor.",
+    "Price_Per_Unit": 0.0372
+  },
+  {
+    "Article_ID": "ART-0045",
+    "Raw_Name": "Cumin (Ground)",
+    "Brand": "Verstegen",
+    "Price": 2.25,
+    "Quantity_Value": 35.0,
+    "Quantity_Unit": "g",
+    "Description": "Earthy and warm ground cumin.",
+    "Price_Per_Unit": 0.0642
+  },
+  {
+    "Article_ID": "ART-0046",
+    "Raw_Name": "Garlic Powder",
+    "Brand": "Picnic",
+    "Price": 1.35,
+    "Quantity_Value": 45.0,
+    "Quantity_Unit": "g",
+    "Description": "Dehydrated garlic powder for quick seasoning.",
+    "Price_Per_Unit": 0.0300
+  },
+  {
+    "Article_ID": "ART-0047",
+    "Raw_Name": "Sumac",
+    "Brand": "Al-Andalus",
+    "Price": 2.99,
+    "Quantity_Value": 50.0,
+    "Quantity_Unit": "g",
+    "Description": "Tangy middle-eastern spice perfect for salads.",
+    "Price_Per_Unit": 0.0598
+  },
+  {
+    "Article_ID": "ART-0048",
+    "Raw_Name": "Soy Sauce",
+    "Brand": "Picnic",
+    "Price": 1.55,
+    "Quantity_Value": 150.0,
+    "Quantity_Unit": "ml",
+    "Description": "Savory condiment used for seasoning Asian-inspired dishes.",
+    "Price_Per_Unit": 0.0103
+  },
+  {
+    "Article_ID": "ART-0049",
+    "Raw_Name": "Mayonnaise",
+    "Brand": "Calve",
+    "Price": 2.85,
+    "Quantity_Value": 450.0,
+    "Quantity_Unit": "ml",
+    "Description": "Creamy traditional mayonnaise.",
+    "Price_Per_Unit": 0.0063
+  },
+  {
+    "Article_ID": "ART-0050",
+    "Raw_Name": "Dijon Mustard",
+    "Brand": "Maille",
+    "Price": 2.49,
+    "Quantity_Value": 215.0,
+    "Quantity_Unit": "g",
+    "Description": "Classic sharp Dijon mustard from France.",
+    "Price_Per_Unit": 0.0115
+  },
+  {
+    "Article_ID": "ART-0051",
+    "Raw_Name": "Balsamic Vinegar",
+    "Brand": "Picnic",
+    "Price": 2.19,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "ml",
+    "Description": "Dark, sweet, and rich balsamic vinegar.",
+    "Price_Per_Unit": 0.0087
+  },
+  {
+    "Article_ID": "ART-0052",
+    "Raw_Name": "White Wine Vinegar",
+    "Brand": "Picnic",
+    "Price": 1.25,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "ml",
+    "Description": "Crisp white wine vinegar for dressings.",
+    "Price_Per_Unit": 0.0025
+  },
+  {
+    "Article_ID": "ART-0053",
+    "Raw_Name": "Peanut Butter",
+    "Brand": "Calve",
+    "Price": 2.99,
+    "Quantity_Value": 350.0,
+    "Quantity_Unit": "g",
+    "Description": "Traditional Dutch peanut butter made with 100% peanuts.",
+    "Price_Per_Unit": 0.0085
+  },
+  {
+    "Article_ID": "ART-0054",
+    "Raw_Name": "Chocolate Sprinkles (Hagelslag)",
+    "Brand": "De Ruijter",
+    "Price": 1.95,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Traditional Dutch milk chocolate sprinkles.",
+    "Price_Per_Unit": 0.0048
+  },
+  {
+    "Article_ID": "ART-0055",
+    "Raw_Name": "Strawberry Jam",
+    "Brand": "Bonne Maman",
+    "Price": 3.15,
+    "Quantity_Value": 370.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium strawberry preserves.",
+    "Price_Per_Unit": 0.0085
+  },
+  {
+    "Article_ID": "ART-0056",
+    "Raw_Name": "Honey",
+    "Brand": "Langnese",
+    "Price": 4.50,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Pure bee honey for sweetening tea and baking.",
+    "Price_Per_Unit": 0.0090
+  },
+  {
+    "Article_ID": "ART-0057",
+    "Raw_Name": "Canned Chopped Tomatoes",
+    "Brand": "Mutti",
+    "Price": 1.45,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "High quality Italian chopped tomatoes.",
+    "Price_Per_Unit": 0.0036
+  },
+  {
+    "Article_ID": "ART-0058",
+    "Raw_Name": "Tomato Paste",
+    "Brand": "Picnic",
+    "Price": 0.45,
+    "Quantity_Value": 70.0,
+    "Quantity_Unit": "g",
+    "Description": "Concentrated tomato puree.",
+    "Price_Per_Unit": 0.0064
+  },
+  {
+    "Article_ID": "ART-0059",
+    "Raw_Name": "Kidney Beans",
+    "Brand": "Hak",
+    "Price": 1.85,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Red kidney beans in a jar.",
+    "Price_Per_Unit": 0.0046
+  },
+  {
+    "Article_ID": "ART-0060",
+    "Raw_Name": "Chickpeas",
+    "Brand": "Picnic",
+    "Price": 0.99,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Canned chickpeas, great for hummus and curries.",
+    "Price_Per_Unit": 0.0024
+  },
+  {
+    "Article_ID": "ART-0061",
+    "Raw_Name": "Canned Tuna (In Water)",
+    "Brand": "John West",
+    "Price": 2.45,
+    "Quantity_Value": 160.0,
+    "Quantity_Unit": "g",
+    "Description": "Skipjack tuna chunks in spring water.",
+    "Price_Per_Unit": 0.0153
+  },
+  {
+    "Article_ID": "ART-0062",
+    "Raw_Name": "Canned Tuna (In Sunflower Oil)",
+    "Brand": "Picnic",
+    "Price": 1.65,
+    "Quantity_Value": 160.0,
+    "Quantity_Unit": "g",
+    "Description": "Tuna chunks in sunflower oil.",
+    "Price_Per_Unit": 0.0103
+  },
+  {
+    "Article_ID": "ART-0063",
+    "Raw_Name": "Sweet Corn",
+    "Brand": "Bonduelle",
+    "Price": 1.35,
+    "Quantity_Value": 300.0,
+    "Quantity_Unit": "g",
+    "Description": "Crisp and sweet canned corn kernels.",
+    "Price_Per_Unit": 0.0045
+  },
+  {
+    "Article_ID": "ART-0064",
+    "Raw_Name": "Ground Beef (Lean)",
+    "Brand": "Picnic",
+    "Price": 4.95,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Lean minced beef for pasta and tacos.",
+    "Price_Per_Unit": 0.0099
+  },
+  {
+    "Article_ID": "ART-0065",
+    "Raw_Name": "Pork Chops",
+    "Brand": "Picnic",
+    "Price": 3.85,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Tender pork chops with a bone.",
+    "Price_Per_Unit": 0.0096
+  },
+  {
+    "Article_ID": "ART-0066",
+    "Raw_Name": "Bacon Strips",
+    "Brand": "Stegeman",
+    "Price": 2.45,
+    "Quantity_Value": 150.0,
+    "Quantity_Unit": "g",
+    "Description": "Smoked bacon strips.",
+    "Price_Per_Unit": 0.0163
+  },
+  {
+    "Article_ID": "ART-0067",
+    "Raw_Name": "Fresh Salmon Fillet",
+    "Brand": "Picnic",
+    "Price": 6.99,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Atlantic salmon fillet portions.",
+    "Price_Per_Unit": 0.0279
+  },
+  {
+    "Article_ID": "ART-0068",
+    "Raw_Name": "Smoked Salmon",
+    "Brand": "Picnic",
+    "Price": 4.50,
+    "Quantity_Value": 100.0,
+    "Quantity_Unit": "g",
+    "Description": "Thinly sliced smoked salmon.",
+    "Price_Per_Unit": 0.0450
+  },
+  {
+    "Article_ID": "ART-0069",
+    "Raw_Name": "Potatoes (Waxy)",
+    "Brand": "Picnic",
+    "Price": 2.29,
+    "Quantity_Value": 2000.0,
+    "Quantity_Unit": "g",
+    "Description": "Firm potatoes ideal for boiling and roasting.",
+    "Price_Per_Unit": 0.0011
+  },
+  {
+    "Article_ID": "ART-0070",
+    "Raw_Name": "Carrots",
+    "Brand": "Picnic",
+    "Price": 1.15,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Fresh unwashed winter carrots.",
+    "Price_Per_Unit": 0.0011
+  },
+  {
+    "Article_ID": "ART-0071",
+    "Raw_Name": "Broccoli",
+    "Brand": "Picnic",
+    "Price": 1.29,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Fresh green broccoli crown.",
+    "Price_Per_Unit": 0.0025
+  },
+  {
+    "Article_ID": "ART-0072",
+    "Raw_Name": "Cauliflower",
+    "Brand": "Picnic",
+    "Price": 1.89,
+    "Quantity_Value": 800.0,
+    "Quantity_Unit": "g",
+    "Description": "Whole fresh cauliflower.",
+    "Price_Per_Unit": 0.0023
+  },
+  {
+    "Article_ID": "ART-0073",
+    "Raw_Name": "Fresh Spinach",
+    "Brand": "Picnic",
+    "Price": 1.99,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Washed baby spinach leaves.",
+    "Price_Per_Unit": 0.0049
+  },
+  {
+    "Article_ID": "ART-0074",
+    "Raw_Name": "Iceberg Lettuce",
+    "Brand": "Picnic",
+    "Price": 0.99,
+    "Quantity_Value": 350.0,
+    "Quantity_Unit": "g",
+    "Description": "Crisp whole iceberg lettuce head.",
+    "Price_Per_Unit": 0.0028
+  },
+  {
+    "Article_ID": "ART-0075",
+    "Raw_Name": "Zucchini (Courgette)",
+    "Brand": "Picnic",
+    "Price": 0.89,
+    "Quantity_Value": 350.0,
+    "Quantity_Unit": "g",
+    "Description": "Fresh green zucchini.",
+    "Price_Per_Unit": 0.0025
+  },
+  {
+    "Article_ID": "ART-0076",
+    "Raw_Name": "Eggplant (Aubergine)",
+    "Brand": "Picnic",
+    "Price": 1.15,
+    "Quantity_Value": 300.0,
+    "Quantity_Unit": "g",
+    "Description": "Firm purple eggplant.",
+    "Price_Per_Unit": 0.0038
+  },
+  {
+    "Article_ID": "ART-0077",
+    "Raw_Name": "Mushrooms (Champignons)",
+    "Brand": "Picnic",
+    "Price": 1.25,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "White button mushrooms.",
+    "Price_Per_Unit": 0.0050
+  },
+  {
+    "Article_ID": "ART-0078",
+    "Raw_Name": "Oranges",
+    "Brand": "Picnic",
+    "Price": 2.49,
+    "Quantity_Value": 1500.0,
+    "Quantity_Unit": "g",
+    "Description": "Sweet and juicy navel oranges.",
+    "Price_Per_Unit": 0.0016
+  },
+  {
+    "Article_ID": "ART-0079",
+    "Raw_Name": "Grapes (Seedless White)",
+    "Brand": "Picnic",
+    "Price": 2.99,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Crisp seedless white grapes.",
+    "Price_Per_Unit": 0.0059
+  },
+  {
+    "Article_ID": "ART-0080",
+    "Raw_Name": "Orange Juice (Fresh)",
+    "Brand": "CoolBest",
+    "Price": 2.69,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "ml",
+    "Description": "100% freshly squeezed orange juice.",
+    "Price_Per_Unit": 0.0026
+  },
+  {
+    "Article_ID": "ART-0081",
+    "Raw_Name": "Apple Juice",
+    "Brand": "Appelsientje",
+    "Price": 1.85,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "ml",
+    "Description": "Clear filtered apple juice.",
+    "Price_Per_Unit": 0.0018
+  },
+  {
+    "Article_ID": "ART-0082",
+    "Raw_Name": "Sparkling Water",
+    "Brand": "Bar-le-Duc",
+    "Price": 0.65,
+    "Quantity_Value": 1500.0,
+    "Quantity_Unit": "ml",
+    "Description": "Natural mineral water with carbonation.",
+    "Price_Per_Unit": 0.0004
+  },
+  {
+    "Article_ID": "ART-0083",
+    "Raw_Name": "Coca-Cola Regular",
+    "Brand": "Coca-Cola",
+    "Price": 2.25,
+    "Quantity_Value": 1500.0,
+    "Quantity_Unit": "ml",
+    "Description": "Classic cola carbonated beverage.",
+    "Price_Per_Unit": 0.0015
+  },
+  {
+    "Article_ID": "ART-0084",
+    "Raw_Name": "Coffee Beans",
+    "Brand": "Douwe Egberts",
+    "Price": 6.49,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Medium roast whole coffee beans.",
+    "Price_Per_Unit": 0.0129
+  },
+  {
+    "Article_ID": "ART-0085",
+    "Raw_Name": "Tea Bags (English Breakfast)",
+    "Brand": "Pickwick",
+    "Price": 1.75,
+    "Quantity_Value": 40.0,
+    "Quantity_Unit": "piece",
+    "Description": "Classic black tea blend.",
+    "Price_Per_Unit": 0.0437
+  },
+  {
+    "Article_ID": "ART-0086",
+    "Raw_Name": "Milk Chocolate Bar",
+    "Brand": "Milka",
+    "Price": 1.15,
+    "Quantity_Value": 100.0,
+    "Quantity_Unit": "g",
+    "Description": "Alpine milk chocolate.",
+    "Price_Per_Unit": 0.0115
+  },
+  {
+    "Article_ID": "ART-0087",
+    "Raw_Name": "Dark Chocolate 70%",
+    "Brand": "Lindt",
+    "Price": 2.49,
+    "Quantity_Value": 100.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium 70% cocoa dark chocolate.",
+    "Price_Per_Unit": 0.0249
+  },
+  {
+    "Article_ID": "ART-0088",
+    "Raw_Name": "Potato Chips (Paprika)",
+    "Brand": "Lays",
+    "Price": 1.85,
+    "Quantity_Value": 225.0,
+    "Quantity_Unit": "g",
+    "Description": "Crispy potato chips with paprika flavor.",
+    "Price_Per_Unit": 0.0082
+  },
+  {
+    "Article_ID": "ART-0089",
+    "Raw_Name": "Tortilla Chips",
+    "Brand": "Doritos",
+    "Price": 1.95,
+    "Quantity_Value": 185.0,
+    "Quantity_Unit": "g",
+    "Description": "Nacho cheese flavored corn chips.",
+    "Price_Per_Unit": 0.0105
+  },
+  {
+    "Article_ID": "ART-0090",
+    "Raw_Name": "Mixed Nuts (Unsalted)",
+    "Brand": "Duyvis",
+    "Price": 3.49,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Roasted unsalted nut mix.",
+    "Price_Per_Unit": 0.0174
+  },
+  {
+    "Article_ID": "ART-0091",
+    "Raw_Name": "Grated Mozzarella",
+    "Brand": "Picnic",
+    "Price": 1.99,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Pre-grated mozzarella cheese for pizza and pasta.",
+    "Price_Per_Unit": 0.0099
+  },
+  {
+    "Article_ID": "ART-0092",
+    "Raw_Name": "Parmesan Cheese (Parmigiano Reggiano)",
+    "Brand": "Zanetti",
+    "Price": 4.15,
+    "Quantity_Value": 150.0,
+    "Quantity_Unit": "g",
+    "Description": "Aged Italian hard cheese wedge.",
+    "Price_Per_Unit": 0.0276
+  },
+  {
+    "Article_ID": "ART-0093",
+    "Raw_Name": "Feta Cheese",
+    "Brand": "Dodoni",
+    "Price": 2.75,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Authentic Greek feta cheese in brine.",
+    "Price_Per_Unit": 0.0137
+  },
+  {
+    "Article_ID": "ART-0094",
+    "Raw_Name": "Vegetable Oil",
+    "Brand": "Picnic",
+    "Price": 2.15,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "ml",
+    "Description": "Neutral sunflower oil for frying and baking.",
+    "Price_Per_Unit": 0.0021
+  },
+  {
+    "Article_ID": "ART-0095",
+    "Raw_Name": "Chicken Bouillon Cubes",
+    "Brand": "Maggi",
+    "Price": 1.25,
+    "Quantity_Value": 120.0,
+    "Quantity_Unit": "g",
+    "Description": "Chicken stock cubes for soups and stews.",
+    "Price_Per_Unit": 0.0104
+  },
+  {
+    "Article_ID": "ART-0096",
+    "Raw_Name": "Vegetable Bouillon Cubes",
+    "Brand": "Knorr",
+    "Price": 1.35,
+    "Quantity_Value": 120.0,
+    "Quantity_Unit": "g",
+    "Description": "Vegetable stock cubes.",
+    "Price_Per_Unit": 0.0112
+  },
+  {
+    "Article_ID": "ART-0097",
+    "Raw_Name": "Coconut Milk",
+    "Brand": "Conimex",
+    "Price": 1.85,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "ml",
+    "Description": "Rich canned coconut milk for curries.",
+    "Price_Per_Unit": 0.0046
+  },
+  {
+    "Article_ID": "ART-0098",
+    "Raw_Name": "Red Curry Paste",
+    "Brand": "Koh Thai",
+    "Price": 2.45,
+    "Quantity_Value": 225.0,
+    "Quantity_Unit": "g",
+    "Description": "Spicy authentic Thai red curry paste.",
+    "Price_Per_Unit": 0.0108
+  },
+  {
+    "Article_ID": "ART-0099",
+    "Raw_Name": "Fabric Softener",
+    "Brand": "Robijn",
+    "Price": 3.99,
+    "Quantity_Value": 750.0,
+    "Quantity_Unit": "ml",
+    "Description": "Long-lasting floral fragrance for laundry.",
+    "Price_Per_Unit": 0.0053
+  },
+  {
+    "Article_ID": "ART-0100",
+    "Raw_Name": "Dishwashing Liquid",
+    "Brand": "Dreft",
+    "Price": 2.15,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "ml",
+    "Description": "Powerful dish soap for cutting grease.",
+    "Price_Per_Unit": 0.0053
+  },
+  {
+    "Article_ID": "ART-0101",
+    "Raw_Name": "Premium Atlantic Salmon Fillets",
+    "Brand": "Fish Tales",
+    "Price": 9.99,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Sustainably caught, premium thick-cut Atlantic salmon.",
+    "Price_Per_Unit": 0.0399
+  },
+  {
+    "Article_ID": "ART-0102",
+    "Raw_Name": "Frozen Pink Salmon Fillets",
+    "Brand": "Picnic Basic",
+    "Price": 3.99,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Budget-friendly frozen pink salmon, great for everyday meals.",
+    "Price_Per_Unit": 0.0099
+  },
+  {
+    "Article_ID": "ART-0103",
+    "Raw_Name": "Green Asparagus",
+    "Brand": "Picnic",
+    "Price": 2.99,
+    "Quantity_Value": 350.0,
+    "Quantity_Unit": "g",
+    "Description": "Fresh and crisp green asparagus spears.",
+    "Price_Per_Unit": 0.0085
+  },
+  {
+    "Article_ID": "ART-0104",
+    "Raw_Name": "Wild Rice Blend",
+    "Brand": "Lassie",
+    "Price": 2.89,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium mix of white, brown, and wild rice.",
+    "Price_Per_Unit": 0.0115
+  },
+  {
+    "Article_ID": "ART-0105",
+    "Raw_Name": "Dry White Wine (Chardonnay)",
+    "Brand": "Yellow Tail",
+    "Price": 5.99,
+    "Quantity_Value": 750.0,
+    "Quantity_Unit": "ml",
+    "Description": "Crisp and premium dry white wine.",
+    "Price_Per_Unit": 0.0079
+  },
+  {
+    "Article_ID": "ART-0106",
+    "Raw_Name": "Cooking White Wine",
+    "Brand": "Picnic Basic",
+    "Price": 2.29,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "ml",
+    "Description": "Affordable white wine blend perfect for cooking and deglazing.",
+    "Price_Per_Unit": 0.0022
+  },
+  {
+    "Article_ID": "ART-0107",
+    "Raw_Name": "Fresh Chives",
+    "Brand": "Picnic",
+    "Price": 1.39,
+    "Quantity_Value": 25.0,
+    "Quantity_Unit": "g",
+    "Description": "Freshly cut mild onion-flavored chives.",
+    "Price_Per_Unit": 0.0556
+  },
+  {
+    "Article_ID": "ART-0108",
+    "Raw_Name": "Strong Bread Flour",
+    "Brand": "Koopmans",
+    "Price": 1.75,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "High-protein wheat flour ideal for yeast baking.",
+    "Price_Per_Unit": 0.0017
+  },
+  {
+    "Article_ID": "ART-0109",
+    "Raw_Name": "Dried Yeast",
+    "Brand": "Dr. Oetker",
+    "Price": 1.15,
+    "Quantity_Value": 21.0,
+    "Quantity_Unit": "g",
+    "Description": "Instant active dried yeast, 3 sachets of 7g.",
+    "Price_Per_Unit": 0.0547
+  },
+  {
+    "Article_ID": "ART-0110",
+    "Raw_Name": "Caster Sugar",
+    "Brand": "Van Gilse",
+    "Price": 1.39,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Superfine baking sugar.",
+    "Price_Per_Unit": 0.0027
+  },
+  {
+    "Article_ID": "ART-0111",
+    "Raw_Name": "Sesame Seeds",
+    "Brand": "Picnic",
+    "Price": 1.65,
+    "Quantity_Value": 100.0,
+    "Quantity_Unit": "g",
+    "Description": "Unhulled white sesame seeds.",
+    "Price_Per_Unit": 0.0165
+  },
+  {
+    "Article_ID": "ART-0112",
+    "Raw_Name": "Forest Honey",
+    "Brand": "De Traay Organic",
+    "Price": 5.49,
+    "Quantity_Value": 350.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium organic dark forest honey.",
+    "Price_Per_Unit": 0.0156
+  },
+  {
+    "Article_ID": "ART-0113",
+    "Raw_Name": "Sweet Potatoes",
+    "Brand": "Picnic",
+    "Price": 1.99,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Orange-fleshed sweet potatoes.",
+    "Price_Per_Unit": 0.0019
+  },
+  {
+    "Article_ID": "ART-0114",
+    "Raw_Name": "Canned Brown Lentils",
+    "Brand": "Hak",
+    "Price": 1.65,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Ready-to-eat tender brown lentils.",
+    "Price_Per_Unit": 0.0041
+  },
+  {
+    "Article_ID": "ART-0115",
+    "Raw_Name": "Curry Powder",
+    "Brand": "Verstegen",
+    "Price": 2.45,
+    "Quantity_Value": 40.0,
+    "Quantity_Unit": "g",
+    "Description": "Aromatic Madras curry spice blend.",
+    "Price_Per_Unit": 0.0612
+  },
+  {
+    "Article_ID": "ART-0116",
+    "Raw_Name": "Ground Turmeric",
+    "Brand": "Picnic",
+    "Price": 1.35,
+    "Quantity_Value": 45.0,
+    "Quantity_Unit": "g",
+    "Description": "Bright yellow ground turmeric.",
+    "Price_Per_Unit": 0.0300
+  },
+  {
+    "Article_ID": "ART-0117",
+    "Raw_Name": "Fresh Coriander (Cilantro)",
+    "Brand": "Picnic",
+    "Price": 1.39,
+    "Quantity_Value": 30.0,
+    "Quantity_Unit": "g",
+    "Description": "Fresh herbaceous coriander leaves.",
+    "Price_Per_Unit": 0.0463
+  },
+  {
+    "Article_ID": "ART-0118",
+    "Raw_Name": "Stone-baked Naan Bread",
+    "Brand": "Patak's",
+    "Price": 2.25,
+    "Quantity_Value": 260.0,
+    "Quantity_Unit": "g",
+    "Description": "Soft Indian flatbreads, 2 pack.",
+    "Price_Per_Unit": 0.0086
+  },
+  {
+    "Article_ID": "ART-0119",
+    "Raw_Name": "Mixed Ground Beef & Pork",
+    "Brand": "Picnic Basic",
+    "Price": 3.49,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Budget half-beef, half-pork minced meat. High fat content.",
+    "Price_Per_Unit": 0.0069
+  },
+  {
+    "Article_ID": "ART-0120",
+    "Raw_Name": "Organic Grass-Fed Ground Beef",
+    "Brand": "Picnic Organic",
+    "Price": 6.99,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium 100% organic lean ground beef.",
+    "Price_Per_Unit": 0.0139
+  },
+  {
+    "Article_ID": "ART-0121",
+    "Raw_Name": "Peeled Tomatoes",
+    "Brand": "Mutti",
+    "Price": 1.65,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Whole peeled Italian tomatoes in juice.",
+    "Price_Per_Unit": 0.0041
+  },
+  {
+    "Article_ID": "ART-0122",
+    "Raw_Name": "Dried Basil",
+    "Brand": "Picnic",
+    "Price": 1.15,
+    "Quantity_Value": 15.0,
+    "Quantity_Unit": "g",
+    "Description": "Dried Mediterranean basil leaves.",
+    "Price_Per_Unit": 0.0766
+  },
+  {
+    "Article_ID": "ART-0123",
+    "Raw_Name": "Chili Flakes",
+    "Brand": "Picnic",
+    "Price": 1.45,
+    "Quantity_Value": 35.0,
+    "Quantity_Unit": "g",
+    "Description": "Crushed spicy red pepper flakes.",
+    "Price_Per_Unit": 0.0414
+  },
+  {
+    "Article_ID": "ART-0124",
+    "Raw_Name": "Premium Bronze Die Spaghetti",
+    "Brand": "De Cecco",
+    "Price": 2.15,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Authentic Italian rough-textured spaghetti.",
+    "Price_Per_Unit": 0.0043
+  },
+  {
+    "Article_ID": "ART-0125",
+    "Raw_Name": "Basic Spaghetti",
+    "Brand": "Picnic Basic",
+    "Price": 0.65,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Budget-friendly everyday pasta.",
+    "Price_Per_Unit": 0.0013
+  },
+  {
+    "Article_ID": "ART-0126",
+    "Raw_Name": "Garlic Baguette",
+    "Brand": "Picnic",
+    "Price": 1.15,
+    "Quantity_Value": 175.0,
+    "Quantity_Unit": "g",
+    "Description": "Pre-sliced baguette filled with garlic herb butter.",
+    "Price_Per_Unit": 0.0065
+  },
+  {
+    "Article_ID": "ART-0127",
+    "Raw_Name": "Budget Garlic Baguette",
+    "Brand": "Picnic Basic",
+    "Price": 0.55,
+    "Quantity_Value": 150.0,
+    "Quantity_Unit": "g",
+    "Description": "Simple frozen garlic bread.",
+    "Price_Per_Unit": 0.0036
+  },
+  {
+    "Article_ID": "ART-0128",
+    "Raw_Name": "Romaine Lettuce Hearts",
+    "Brand": "Picnic",
+    "Price": 1.75,
+    "Quantity_Value": 300.0,
+    "Quantity_Unit": "g",
+    "Description": "Two crisp romaine lettuce hearts.",
+    "Price_Per_Unit": 0.0058
+  },
+  {
+    "Article_ID": "ART-0129",
+    "Raw_Name": "Pine Nuts",
+    "Brand": "Picnic",
+    "Price": 4.50,
+    "Quantity_Value": 70.0,
+    "Quantity_Unit": "g",
+    "Description": "Rich, buttery pine nuts perfect for salads and pesto.",
+    "Price_Per_Unit": 0.0642
+  },
+  {
+    "Article_ID": "ART-0130",
+    "Raw_Name": "Pitted Kalamata Olives",
+    "Brand": "Picnic",
+    "Price": 2.25,
+    "Quantity_Value": 150.0,
+    "Quantity_Unit": "g",
+    "Description": "Dark purple Greek olives without stones.",
+    "Price_Per_Unit": 0.0150
+  },
+  {
+    "Article_ID": "ART-0131",
+    "Raw_Name": "Crumbled Goat Cheese",
+    "Brand": "Bettine",
+    "Price": 3.15,
+    "Quantity_Value": 125.0,
+    "Quantity_Unit": "g",
+    "Description": "Mild and creamy soft goat cheese crumbles.",
+    "Price_Per_Unit": 0.0252
+  },
+  {
+    "Article_ID": "ART-0132",
+    "Raw_Name": "Balsamic Glaze",
+    "Brand": "Remia",
+    "Price": 2.45,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "ml",
+    "Description": "Thick and sweet balsamic reduction.",
+    "Price_Per_Unit": 0.0098
+  },
+  {
+    "Article_ID": "ART-0133",
+    "Raw_Name": "Rainbow Peppercorns",
+    "Brand": "Verstegen",
+    "Price": 2.99,
+    "Quantity_Value": 45.0,
+    "Quantity_Unit": "g",
+    "Description": "A beautiful mix of black, white, green, and pink peppercorns.",
+    "Price_Per_Unit": 0.0664
+  },
+  {
+    "Article_ID": "ART-0134",
+    "Raw_Name": "Organic Hass Avocados",
+    "Brand": "Picnic Organic",
+    "Price": 3.49,
+    "Quantity_Value": 350.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium organic ripe avocados (2 pack).",
+    "Price_Per_Unit": 0.0099
+  },
+  {
+    "Article_ID": "ART-0135",
+    "Raw_Name": "Avocado Net (Unripe)",
+    "Brand": "Picnic Basic",
+    "Price": 2.50,
+    "Quantity_Value": 700.0,
+    "Quantity_Unit": "g",
+    "Description": "Budget net of smaller, firm avocados. Needs ripening at home.",
+    "Price_Per_Unit": 0.0035
+  },
+  {
+    "Article_ID": "ART-0136",
+    "Raw_Name": "Budget Cheddar Cheese",
+    "Brand": "Picnic Basic",
+    "Price": 2.15,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Mild budget cheddar block.",
+    "Price_Per_Unit": 0.0053
+  },
+  {
+    "Article_ID": "ART-0137",
+    "Raw_Name": "Mature Cheddar Cheese",
+    "Brand": "Picnic",
+    "Price": 3.49,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard aged mature cheddar.",
+    "Price_Per_Unit": 0.0087
+  },
+  {
+    "Article_ID": "ART-0138",
+    "Raw_Name": "Vintage Reserve Cheddar",
+    "Brand": "Wyke Farms",
+    "Price": 4.99,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium extra mature farmhouse cheddar.",
+    "Price_Per_Unit": 0.0199
+  },
+  {
+    "Article_ID": "ART-0139",
+    "Raw_Name": "Budget Canned Tomatoes",
+    "Brand": "Picnic Basic",
+    "Price": 0.55,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic chopped tomatoes in tomato juice.",
+    "Price_Per_Unit": 0.0013
+  },
+  {
+    "Article_ID": "ART-0140",
+    "Raw_Name": "Diced Vine Tomatoes",
+    "Brand": "Picnic",
+    "Price": 0.99,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Rich diced vine tomatoes for sauces.",
+    "Price_Per_Unit": 0.0024
+  },
+  {
+    "Article_ID": "ART-0141",
+    "Raw_Name": "San Marzano Tomatoes DOP",
+    "Brand": "Mutti",
+    "Price": 2.49,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium authentic San Marzano peeled tomatoes.",
+    "Price_Per_Unit": 0.0062
+  },
+  {
+    "Article_ID": "ART-0142",
+    "Raw_Name": "Frozen Chicken Thighs",
+    "Brand": "Picnic Basic",
+    "Price": 3.50,
+    "Quantity_Value": 800.0,
+    "Quantity_Unit": "g",
+    "Description": "Budget frozen boneless chicken thighs.",
+    "Price_Per_Unit": 0.0043
+  },
+  {
+    "Article_ID": "ART-0143",
+    "Raw_Name": "Fresh Chicken Thighs",
+    "Brand": "Picnic",
+    "Price": 4.85,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Fresh tender boneless chicken thighs.",
+    "Price_Per_Unit": 0.0097
+  },
+  {
+    "Article_ID": "ART-0144",
+    "Raw_Name": "Organic Free Range Chicken Thighs",
+    "Brand": "Kemper",
+    "Price": 8.50,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium organic free range chicken thighs.",
+    "Price_Per_Unit": 0.0212
+  },
+  {
+    "Article_ID": "ART-0145",
+    "Raw_Name": "Budget Fusilli Pasta",
+    "Brand": "Picnic Basic",
+    "Price": 0.65,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Simple wheat fusilli pasta.",
+    "Price_Per_Unit": 0.0013
+  },
+  {
+    "Article_ID": "ART-0146",
+    "Raw_Name": "Durum Wheat Fusilli",
+    "Brand": "Barilla",
+    "Price": 1.45,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Classic Italian fusilli.",
+    "Price_Per_Unit": 0.0029
+  },
+  {
+    "Article_ID": "ART-0147",
+    "Raw_Name": "Bronze Die Artisanal Fusilli",
+    "Brand": "De Cecco",
+    "Price": 2.25,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium rough-texture bronze die pasta.",
+    "Price_Per_Unit": 0.0045
+  },
+  {
+    "Article_ID": "ART-0148",
+    "Raw_Name": "Budget Carrots",
+    "Brand": "Picnic Basic",
+    "Price": 0.75,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Unwashed bulk winter carrots.",
+    "Price_Per_Unit": 0.0007
+  },
+  {
+    "Article_ID": "ART-0149",
+    "Raw_Name": "Washed Snack Carrots",
+    "Brand": "Picnic",
+    "Price": 1.25,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Cleaned and ready to eat carrots.",
+    "Price_Per_Unit": 0.0025
+  },
+  {
+    "Article_ID": "ART-0150",
+    "Raw_Name": "Organic Rainbow Carrots",
+    "Brand": "Picnic Organic",
+    "Price": 2.49,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium organic multi-colored carrots.",
+    "Price_Per_Unit": 0.0062
+  },
+  {
+    "Article_ID": "ART-0151",
+    "Raw_Name": "Budget Bacon Bits",
+    "Brand": "Picnic Basic",
+    "Price": 1.50,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Value pack of cooking bacon pieces.",
+    "Price_Per_Unit": 0.0060
+  },
+  {
+    "Article_ID": "ART-0152",
+    "Raw_Name": "Smoked Bacon Strips",
+    "Brand": "Stegeman",
+    "Price": 2.45,
+    "Quantity_Value": 150.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard smoked bacon slices.",
+    "Price_Per_Unit": 0.0163
+  },
+  {
+    "Article_ID": "ART-0153",
+    "Raw_Name": "Thick Cut Dry Cured Bacon",
+    "Brand": "Brandt & Levie",
+    "Price": 4.95,
+    "Quantity_Value": 150.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium artisanal dry cured thick bacon.",
+    "Price_Per_Unit": 0.0330
+  },
+  {
+    "Article_ID": "ART-0154",
+    "Raw_Name": "Budget Long Grain Rice",
+    "Brand": "Picnic Basic",
+    "Price": 1.15,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard white long grain rice.",
+    "Price_Per_Unit": 0.0011
+  },
+  {
+    "Article_ID": "ART-0155",
+    "Raw_Name": "Aromatic Basmati Rice",
+    "Brand": "Lassie",
+    "Price": 2.45,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Quality fragrant basmati rice.",
+    "Price_Per_Unit": 0.0061
+  },
+  {
+    "Article_ID": "ART-0156",
+    "Raw_Name": "Organic Fairtrade Basmati",
+    "Brand": "Tilda",
+    "Price": 4.15,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium organic pure basmati rice.",
+    "Price_Per_Unit": 0.0083
+  },
+  {
+    "Article_ID": "ART-0157",
+    "Raw_Name": "Budget Plain Flour",
+    "Brand": "Picnic Basic",
+    "Price": 0.55,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic all-purpose wheat flour.",
+    "Price_Per_Unit": 0.0005
+  },
+  {
+    "Article_ID": "ART-0158",
+    "Raw_Name": "Patent Wheat Flour",
+    "Brand": "Koopmans",
+    "Price": 1.15,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard fine baking flour.",
+    "Price_Per_Unit": 0.0011
+  },
+  {
+    "Article_ID": "ART-0159",
+    "Raw_Name": "Organic Type 00 Flour",
+    "Brand": "Caputo",
+    "Price": 2.25,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium finely milled Italian pizza flour.",
+    "Price_Per_Unit": 0.0022
+  },
+  {
+    "Article_ID": "ART-0160",
+    "Raw_Name": "White Button Mushrooms",
+    "Brand": "Picnic Basic",
+    "Price": 0.99,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic white mushrooms.",
+    "Price_Per_Unit": 0.0039
+  },
+  {
+    "Article_ID": "ART-0161",
+    "Raw_Name": "Chestnut Mushrooms",
+    "Brand": "Picnic",
+    "Price": 1.35,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Firm and flavorful brown chestnut mushrooms.",
+    "Price_Per_Unit": 0.0054
+  },
+  {
+    "Article_ID": "ART-0162",
+    "Raw_Name": "Mixed Wild Exotic Mushrooms",
+    "Brand": "Picnic Organic",
+    "Price": 3.49,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium mix of shiitake and oyster mushrooms.",
+    "Price_Per_Unit": 0.0174
+  },
+  {
+    "Article_ID": "ART-0163",
+    "Raw_Name": "Budget Coconut Milk",
+    "Brand": "Picnic Basic",
+    "Price": 0.89,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "ml",
+    "Description": "Light coconut milk extract.",
+    "Price_Per_Unit": 0.0022
+  },
+  {
+    "Article_ID": "ART-0164",
+    "Raw_Name": "Rich Coconut Milk",
+    "Brand": "Conimex",
+    "Price": 1.85,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "ml",
+    "Description": "Standard creamy coconut milk.",
+    "Price_Per_Unit": 0.0046
+  },
+  {
+    "Article_ID": "ART-0165",
+    "Raw_Name": "Organic Coconut Cream",
+    "Brand": "Aroy-D",
+    "Price": 2.75,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "ml",
+    "Description": "Premium thick organic coconut cream.",
+    "Price_Per_Unit": 0.0068
+  },
+  {
+    "Article_ID": "ART-0166",
+    "Raw_Name": "Budget Black Beans",
+    "Brand": "Picnic Basic",
+    "Price": 0.65,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic black beans in water.",
+    "Price_Per_Unit": 0.0016
+  },
+  {
+    "Article_ID": "ART-0167",
+    "Raw_Name": "Black Beans",
+    "Brand": "Hak",
+    "Price": 1.45,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Firm black beans perfect for chili.",
+    "Price_Per_Unit": 0.0036
+  },
+  {
+    "Article_ID": "ART-0168",
+    "Raw_Name": "Organic Black Beans",
+    "Brand": "Valle Del Sole",
+    "Price": 1.95,
+    "Quantity_Value": 400.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium organic tender black beans.",
+    "Price_Per_Unit": 0.0048
+  },
+  {
+    "Article_ID": "ART-0169",
+    "Raw_Name": "Budget Plain Yogurt",
+    "Brand": "Picnic Basic",
+    "Price": 0.95,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Simple low-fat plain yogurt.",
+    "Price_Per_Unit": 0.0009
+  },
+  {
+    "Article_ID": "ART-0170",
+    "Raw_Name": "Authentic Greek Yogurt",
+    "Brand": "Picnic",
+    "Price": 2.19,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Thick 10% fat Greek yogurt.",
+    "Price_Per_Unit": 0.0043
+  },
+  {
+    "Article_ID": "ART-0171",
+    "Raw_Name": "Organic Skyr",
+    "Brand": "Arla",
+    "Price": 3.25,
+    "Quantity_Value": 450.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium high-protein Icelandic style skyr.",
+    "Price_Per_Unit": 0.0072
+  },
+  {
+    "Article_ID": "ART-0172",
+    "Raw_Name": "Budget Potatoes",
+    "Brand": "Picnic Basic",
+    "Price": 1.49,
+    "Quantity_Value": 2500.0,
+    "Quantity_Unit": "g",
+    "Description": "Large bag of basic all-purpose potatoes.",
+    "Price_Per_Unit": 0.0005
+  },
+  {
+    "Article_ID": "ART-0173",
+    "Raw_Name": "Waxy Roasting Potatoes",
+    "Brand": "Picnic",
+    "Price": 2.29,
+    "Quantity_Value": 2000.0,
+    "Quantity_Unit": "g",
+    "Description": "Firm potatoes perfect for the oven.",
+    "Price_Per_Unit": 0.0011
+  },
+  {
+    "Article_ID": "ART-0174",
+    "Raw_Name": "Organic Baby Potatoes",
+    "Brand": "Picnic Organic",
+    "Price": 2.99,
+    "Quantity_Value": 700.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium small organic potatoes with skin.",
+    "Price_Per_Unit": 0.0042
+  },
+  {
+    "Article_ID": "ART-0175",
+    "Raw_Name": "Budget Soy Sauce",
+    "Brand": "Picnic Basic",
+    "Price": 0.79,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "ml",
+    "Description": "Basic dark soy sauce.",
+    "Price_Per_Unit": 0.0031
+  },
+  {
+    "Article_ID": "ART-0176",
+    "Raw_Name": "Naturally Brewed Soy Sauce",
+    "Brand": "Kikkoman",
+    "Price": 3.49,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "ml",
+    "Description": "Classic Japanese brewed soy sauce.",
+    "Price_Per_Unit": 0.0139
+  },
+  {
+    "Article_ID": "ART-0177",
+    "Raw_Name": "Aged Tamari Soy Sauce",
+    "Brand": "Lima Organic",
+    "Price": 5.25,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "ml",
+    "Description": "Premium gluten-free aged tamari.",
+    "Price_Per_Unit": 0.0210
+  },
+  {
+    "Article_ID": "ART-0178",
+    "Raw_Name": "Budget Peanut Butter",
+    "Brand": "Picnic Basic",
+    "Price": 1.65,
+    "Quantity_Value": 350.0,
+    "Quantity_Unit": "g",
+    "Description": "Smooth creamy peanut butter.",
+    "Price_Per_Unit": 0.0047
+  },
+  {
+    "Article_ID": "ART-0179",
+    "Raw_Name": "100% Peanut Butter",
+    "Brand": "Calve",
+    "Price": 3.15,
+    "Quantity_Value": 350.0,
+    "Quantity_Unit": "g",
+    "Description": "Pure peanut butter with no added sugar.",
+    "Price_Per_Unit": 0.0090
+  },
+  {
+    "Article_ID": "ART-0180",
+    "Raw_Name": "Organic Crunchy Peanut Butter",
+    "Brand": "De Pindakaaswinkel",
+    "Price": 4.95,
+    "Quantity_Value": 420.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium artisanal crunchy peanut butter.",
+    "Price_Per_Unit": 0.0117
+  },
+  {
+    "Article_ID": "ART-0181",
+    "Raw_Name": "Budget Olive Oil",
+    "Brand": "Picnic Basic",
+    "Price": 4.99,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "ml",
+    "Description": "Refined olive oil blend for frying.",
+    "Price_Per_Unit": 0.0049
+  },
+  {
+    "Article_ID": "ART-0182",
+    "Raw_Name": "Extra Virgin Olive Oil",
+    "Brand": "Filippo Berio",
+    "Price": 8.49,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "ml",
+    "Description": "Standard extra virgin cold extracted oil.",
+    "Price_Per_Unit": 0.0169
+  },
+  {
+    "Article_ID": "ART-0183",
+    "Raw_Name": "Premium DOP Olive Oil",
+    "Brand": "Monini",
+    "Price": 12.95,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "ml",
+    "Description": "Artisanal Italian regional olive oil.",
+    "Price_Per_Unit": 0.0259
+  },
+  {
+    "Article_ID": "ART-0184",
+    "Raw_Name": "Budget Beef Steak",
+    "Brand": "Picnic Basic",
+    "Price": 3.99,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Thin cut budget beef steaks.",
+    "Price_Per_Unit": 0.0199
+  },
+  {
+    "Article_ID": "ART-0185",
+    "Raw_Name": "Beef Ribeye Steak",
+    "Brand": "Picnic",
+    "Price": 6.50,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Well-marbled juicy ribeye steak.",
+    "Price_Per_Unit": 0.0325
+  },
+  {
+    "Article_ID": "ART-0186",
+    "Raw_Name": "Dry Aged Angus Ribeye",
+    "Brand": "Greenfields",
+    "Price": 11.99,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium 21-day dry aged angus beef.",
+    "Price_Per_Unit": 0.0479
+  },
+  {
+    "Article_ID": "ART-0187",
+    "Raw_Name": "Frozen Tiny Shrimp",
+    "Brand": "Picnic Basic",
+    "Price": 2.99,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Budget pre-cooked small salad shrimp.",
+    "Price_Per_Unit": 0.0149
+  },
+  {
+    "Article_ID": "ART-0188",
+    "Raw_Name": "Raw King Prawns",
+    "Brand": "Picnic",
+    "Price": 4.95,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Large peeled raw king prawns.",
+    "Price_Per_Unit": 0.0247
+  },
+  {
+    "Article_ID": "ART-0189",
+    "Raw_Name": "Wild Caught Argentinian Shrimp",
+    "Brand": "Queens",
+    "Price": 7.49,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium large wild caught red shrimp.",
+    "Price_Per_Unit": 0.0299
+  },
+  {
+    "Article_ID": "ART-0190",
+    "Raw_Name": "Budget Flour Tortillas",
+    "Brand": "Picnic Basic",
+    "Price": 0.89,
+    "Quantity_Value": 350.0,
+    "Quantity_Unit": "g",
+    "Description": "Simple 8-pack flour tortillas.",
+    "Price_Per_Unit": 0.0025
+  },
+  {
+    "Article_ID": "ART-0191",
+    "Raw_Name": "Large Wrap Tortillas",
+    "Brand": "Santa Maria",
+    "Price": 2.15,
+    "Quantity_Value": 370.0,
+    "Quantity_Unit": "g",
+    "Description": "Soft large Tex-Mex style wraps.",
+    "Price_Per_Unit": 0.0058
+  },
+  {
+    "Article_ID": "ART-0192",
+    "Raw_Name": "Authentic Corn Tortillas",
+    "Brand": "La Morena",
+    "Price": 3.99,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium gluten-free yellow corn tortillas.",
+    "Price_Per_Unit": 0.0159
+  },
+  {
+    "Article_ID": "ART-0193",
+    "Raw_Name": "Budget Squeeze Honey",
+    "Brand": "Picnic Basic",
+    "Price": 1.99,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic blended blossom honey.",
+    "Price_Per_Unit": 0.0039
+  },
+  {
+    "Article_ID": "ART-0194",
+    "Raw_Name": "Clear Blossom Honey",
+    "Brand": "Langnese",
+    "Price": 4.50,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "High quality pure blossom honey.",
+    "Price_Per_Unit": 0.0090
+  },
+  {
+    "Article_ID": "ART-0195",
+    "Raw_Name": "Raw Manuka Honey",
+    "Brand": "Comvita",
+    "Price": 18.99,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium authentic New Zealand Manuka honey.",
+    "Price_Per_Unit": 0.0759
+  },
+  {
+    "Article_ID": "ART-0196",
+    "Raw_Name": "Budget Mozzarella",
+    "Brand": "Picnic Basic",
+    "Price": 0.65,
+    "Quantity_Value": 125.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic cow's milk mozzarella ball.",
+    "Price_Per_Unit": 0.0052
+  },
+  {
+    "Article_ID": "ART-0197",
+    "Raw_Name": "Mozzarella di Latte",
+    "Brand": "Galbani",
+    "Price": 1.35,
+    "Quantity_Value": 125.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard fresh Italian mozzarella.",
+    "Price_Per_Unit": 0.0108
+  },
+  {
+    "Article_ID": "ART-0198",
+    "Raw_Name": "Buffalo Mozzarella DOP",
+    "Brand": "Zanetti",
+    "Price": 2.99,
+    "Quantity_Value": 125.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium rich buffalo milk mozzarella.",
+    "Price_Per_Unit": 0.0239
+  },
+  {
+    "Article_ID": "ART-0199",
+    "Raw_Name": "Budget Firm Tofu",
+    "Brand": "Picnic Basic",
+    "Price": 1.15,
+    "Quantity_Value": 375.0,
+    "Quantity_Unit": "g",
+    "Description": "Simple soy block for stir fries.",
+    "Price_Per_Unit": 0.0030
+  },
+  {
+    "Article_ID": "ART-0200",
+    "Raw_Name": "Organic Firm Tofu",
+    "Brand": "Vivera",
+    "Price": 2.25,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "High quality pressed organic tofu.",
+    "Price_Per_Unit": 0.0090
+  },
+  {
+    "Article_ID": "ART-0201",
+    "Raw_Name": "Premium Silken Tofu",
+    "Brand": "Clearspring",
+    "Price": 3.45,
+    "Quantity_Value": 300.0,
+    "Quantity_Unit": "g",
+    "Description": "Artisanal Japanese-style soft silken tofu.",
+    "Price_Per_Unit": 0.0115
+  },
+  {
+    "Article_ID": "ART-0202",
+    "Raw_Name": "Budget Tomato Ketchup",
+    "Brand": "Picnic Basic",
+    "Price": 0.85,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "ml",
+    "Description": "Basic sweet tomato sauce.",
+    "Price_Per_Unit": 0.0017
+  },
+  {
+    "Article_ID": "ART-0203",
+    "Raw_Name": "Tomato Ketchup",
+    "Brand": "Heinz",
+    "Price": 2.15,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "ml",
+    "Description": "Classic branded ketchup.",
+    "Price_Per_Unit": 0.0043
+  },
+  {
+    "Article_ID": "ART-0204",
+    "Raw_Name": "Organic Reduced Sugar Ketchup",
+    "Brand": "Curtice Brothers",
+    "Price": 3.99,
+    "Quantity_Value": 300.0,
+    "Quantity_Unit": "ml",
+    "Description": "Premium organic ketchup with fresh tomatoes.",
+    "Price_Per_Unit": 0.0133
+  },
+  {
+    "Article_ID": "ART-0205",
+    "Raw_Name": "Budget Apples",
+    "Brand": "Picnic Basic",
+    "Price": 1.49,
+    "Quantity_Value": 1500.0,
+    "Quantity_Unit": "g",
+    "Description": "Mixed variety small apples.",
+    "Price_Per_Unit": 0.0009
+  },
+  {
+    "Article_ID": "ART-0206",
+    "Raw_Name": "Jonagold Apples",
+    "Brand": "Picnic",
+    "Price": 2.49,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Crisp sweet and sour apples.",
+    "Price_Per_Unit": 0.0024
+  },
+  {
+    "Article_ID": "ART-0207",
+    "Raw_Name": "Organic Pink Lady Apples",
+    "Brand": "Picnic Organic",
+    "Price": 4.50,
+    "Quantity_Value": 600.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium sweet and crunchy Pink Lady apples.",
+    "Price_Per_Unit": 0.0075
+  },
+  {
+    "Article_ID": "ART-0208",
+    "Raw_Name": "Budget Bananas",
+    "Brand": "Picnic Basic",
+    "Price": 0.99,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Value pack of loose bananas.",
+    "Price_Per_Unit": 0.0009
+  },
+  {
+    "Article_ID": "ART-0209",
+    "Raw_Name": "Chiquita Bananas",
+    "Brand": "Chiquita",
+    "Price": 1.89,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium branded Cavendish bananas.",
+    "Price_Per_Unit": 0.0018
+  },
+  {
+    "Article_ID": "ART-0210",
+    "Raw_Name": "Fairtrade Organic Bananas",
+    "Brand": "Max Havelaar",
+    "Price": 2.49,
+    "Quantity_Value": 800.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium organic and ethically sourced bananas.",
+    "Price_Per_Unit": 0.0031
+  },
+  {
+    "Article_ID": "ART-0211",
+    "Raw_Name": "Budget Vegetable Spread",
+    "Brand": "Picnic Basic",
+    "Price": 0.85,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic margarine alternative.",
+    "Price_Per_Unit": 0.0017
+  },
+  {
+    "Article_ID": "ART-0212",
+    "Raw_Name": "Real Dairy Butter",
+    "Brand": "Campina",
+    "Price": 2.99,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard rich dairy butter.",
+    "Price_Per_Unit": 0.0119
+  },
+  {
+    "Article_ID": "ART-0213",
+    "Raw_Name": "French Cultured Butter",
+    "Brand": "President",
+    "Price": 4.25,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium slightly salted cultured French butter.",
+    "Price_Per_Unit": 0.0170
+  },
+  {
+    "Article_ID": "ART-0214",
+    "Raw_Name": "Budget Chicken Bouillon",
+    "Brand": "Picnic Basic",
+    "Price": 0.45,
+    "Quantity_Value": 100.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic dry chicken stock cubes.",
+    "Price_Per_Unit": 0.0045
+  },
+  {
+    "Article_ID": "ART-0215",
+    "Raw_Name": "Liquid Chicken Broth",
+    "Brand": "Knorr",
+    "Price": 1.85,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "ml",
+    "Description": "Ready to use chicken liquid stock.",
+    "Price_Per_Unit": 0.0018
+  },
+  {
+    "Article_ID": "ART-0216",
+    "Raw_Name": "Organic Bone Broth",
+    "Brand": "Jaru",
+    "Price": 5.95,
+    "Quantity_Value": 350.0,
+    "Quantity_Unit": "ml",
+    "Description": "Premium slow-simmered organic chicken bone broth.",
+    "Price_Per_Unit": 0.0170
+  },
+  {
+    "Article_ID": "ART-0217",
+    "Raw_Name": "Budget Instant Coffee",
+    "Brand": "Picnic Basic",
+    "Price": 1.99,
+    "Quantity_Value": 200.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic freeze-dried instant coffee.",
+    "Price_Per_Unit": 0.0099
+  },
+  {
+    "Article_ID": "ART-0218",
+    "Raw_Name": "Espresso Beans",
+    "Brand": "Douwe Egberts",
+    "Price": 6.49,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard rich dark roast coffee beans.",
+    "Price_Per_Unit": 0.0129
+  },
+  {
+    "Article_ID": "ART-0219",
+    "Raw_Name": "Single Origin Ethiopian Beans",
+    "Brand": "Moyee",
+    "Price": 8.95,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium fairchain specialty coffee beans.",
+    "Price_Per_Unit": 0.0358
+  },
+  {
+    "Article_ID": "ART-0220",
+    "Raw_Name": "Budget Table Salt",
+    "Brand": "Picnic Basic",
+    "Price": 0.35,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic iodized table salt.",
+    "Price_Per_Unit": 0.0003
+  },
+  {
+    "Article_ID": "ART-0221",
+    "Raw_Name": "Fine Sea Salt",
+    "Brand": "Jozo",
+    "Price": 0.99,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard fine grain sea salt.",
+    "Price_Per_Unit": 0.0019
+  },
+  {
+    "Article_ID": "ART-0222",
+    "Raw_Name": "Flaky Sea Salt",
+    "Brand": "Maldon",
+    "Price": 3.45,
+    "Quantity_Value": 250.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium artisanal sea salt flakes for finishing.",
+    "Price_Per_Unit": 0.0138
+  },
+  {
+    "Article_ID": "ART-0223",
+    "Raw_Name": "Budget Black Pepper",
+    "Brand": "Picnic Basic",
+    "Price": 0.85,
+    "Quantity_Value": 40.0,
+    "Quantity_Unit": "g",
+    "Description": "Pre-ground basic black pepper.",
+    "Price_Per_Unit": 0.0212
+  },
+  {
+    "Article_ID": "ART-0224",
+    "Raw_Name": "Black Peppercorns",
+    "Brand": "Verstegen",
+    "Price": 2.45,
+    "Quantity_Value": 45.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard whole black peppercorns for grinding.",
+    "Price_Per_Unit": 0.0544
+  },
+  {
+    "Article_ID": "ART-0225",
+    "Raw_Name": "Tellicherry Black Peppercorns",
+    "Brand": "Euroma",
+    "Price": 4.15,
+    "Quantity_Value": 40.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium large bold Indian black peppercorns.",
+    "Price_Per_Unit": 0.1037
+  },
+  {
+    "Article_ID": "ART-0226",
+    "Raw_Name": "Budget White Sugar",
+    "Brand": "Picnic Basic",
+    "Price": 0.89,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic granulated beet sugar.",
+    "Price_Per_Unit": 0.0008
+  },
+  {
+    "Article_ID": "ART-0227",
+    "Raw_Name": "Fine Caster Sugar",
+    "Brand": "Van Gilse",
+    "Price": 1.39,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard superfine baking sugar.",
+    "Price_Per_Unit": 0.0027
+  },
+  {
+    "Article_ID": "ART-0228",
+    "Raw_Name": "Organic Raw Cane Sugar",
+    "Brand": "Billington's",
+    "Price": 2.65,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium unrefined raw cane sugar with natural molasses.",
+    "Price_Per_Unit": 0.0053
+  },
+  {
+    "Article_ID": "ART-0229",
+    "Raw_Name": "Budget White Bread",
+    "Brand": "Picnic Basic",
+    "Price": 0.99,
+    "Quantity_Value": 800.0,
+    "Quantity_Unit": "g",
+    "Description": "Basic factory-sliced white loaf.",
+    "Price_Per_Unit": 0.0012
+  },
+  {
+    "Article_ID": "ART-0230",
+    "Raw_Name": "Fresh Sourdough Boule",
+    "Brand": "Picnic Bakery",
+    "Price": 2.45,
+    "Quantity_Value": 600.0,
+    "Quantity_Unit": "g",
+    "Description": "Standard freshly baked sourdough round.",
+    "Price_Per_Unit": 0.0040
+  },
+  {
+    "Article_ID": "ART-0231",
+    "Raw_Name": "Artisanal Spelt Sourdough",
+    "Brand": "Vlaamsch Broodhuys",
+    "Price": 4.95,
+    "Quantity_Value": 500.0,
+    "Quantity_Unit": "g",
+    "Description": "Premium slow-fermented organic spelt sourdough.",
+    "Price_Per_Unit": 0.0099
+  },
+  {
+    "Article_ID": "ART-0232",
+    "Raw_Name": "Budget Orange Juice",
+    "Brand": "Picnic Basic",
+    "Price": 0.95,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "ml",
+    "Description": "Basic orange juice from concentrate.",
+    "Price_Per_Unit": 0.0009
+  },
+  {
+    "Article_ID": "ART-0233",
+    "Raw_Name": "Fresh Orange Juice",
+    "Brand": "CoolBest",
+    "Price": 2.69,
+    "Quantity_Value": 1000.0,
+    "Quantity_Unit": "ml",
+    "Description": "Standard 100% not from concentrate orange juice.",
+    "Price_Per_Unit": 0.0026
+  },
+  {
+    "Article_ID": "ART-0234",
+    "Raw_Name": "Cold Pressed Organic Orange Juice",
+    "Brand": "Innocent",
+    "Price": 3.99,
+    "Quantity_Value": 900.0,
+    "Quantity_Unit": "ml",
+    "Description": "Premium cold pressed juice with pulp.",
+    "Price_Per_Unit": 0.0044
+  },
+  {
+    "Article_ID": "ART-0235",
+    "Raw_Name": "Spring Water",
+    "Brand": "Picnic Basic",
+    "Price": 0.35,
+    "Quantity_Value": 1500.0,
+    "Quantity_Unit": "ml",
+    "Description": "Basic bottled spring water.",
+    "Price_Per_Unit": 0.0002
+  }
+]
