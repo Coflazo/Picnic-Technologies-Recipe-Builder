@@ -159,7 +159,7 @@ class RecipeBuilderPipeline:
         )
         
         # Ensure total is strictly calculated from the final items
-        shopping_list.total_price = round(total_cost, 2)
+        shopping_list.total_cost = round(total_cost, 2)
         if hasattr(shopping_list, 'compute_total'):
             shopping_list.compute_total()
 
