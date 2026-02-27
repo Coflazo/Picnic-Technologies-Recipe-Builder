@@ -1,4 +1,8 @@
-<h1 align="center">Picnic AI Recipe Builder PoC</h1>
+<p align="center">
+  <img src="https://images.ctfassets.net/8vofjvai1hpv/6kPVsBovtEASHsV9zTvq5n/09ccafc8e3bf48186cf37927fdaa37c2/logo-Picnic.png?w=525&h=225&q=90&fm=png&bg=transparent" alt="Picnic Logo" width="300" />
+</p>
+
+<h1 align="center">Picnic Technologies Recipe Builder PoC</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
@@ -81,6 +85,33 @@ To resolve this, the pipeline executes a Semantic Bounding Box. It extracts the 
 This creates a highly-filtered, semantically pristine pool of essentially identical products (e.g., Budget Avocado, Standard Avocado, Premium Avocado). 
 For the `LOW` and `HIGH` tiers, the Re-Ranker is completely bypassed. The system runs a raw `argmin` or `argmax` over the bounded pool unit prices to ensure absolute adherence to the requested economic constraint without sacrificing semantic accuracy.
 
+```python
+def apply_price_tier(candidates: list[dict], tier: str) -> dict:
+    if not candidates:
+        return None
+
+    # Step 1: The Semantic Guardrail
+    # Grab the cosine similarity score of the absolute best match
+    max_score = candidates[0]["score"]
+    
+    # Keep only items that are at least 90 percent as accurate as the top match
+    valid_candidates = [c for c in candidates if c["score"] >= (max_score * 0.90)]
+    
+    # Step 2: Tiered Execution
+    tier = tier.lower()
+    if tier == "low":
+        # Find the absolute cheapest item per unit in the valid pool
+        return min(valid_candidates, key=lambda x: x["article"].price_per_unit)
+    
+    elif tier == "high":
+        # Find the absolute most expensive item per unit in the valid pool
+        return max(valid_candidates, key=lambda x: x["article"].price_per_unit)
+    
+    else:
+        # Medium tier: Stick to the original best semantic/popular match
+        return valid_candidates[0]
+```
+
 ## Project Structure
 
 ```text
@@ -134,6 +165,15 @@ pip install -r requirements.txt
 ```
 
 > Note: If building the FAISS index on macOS, ensure you prefix your scripts with `TOKENIZERS_PARALLELISM=false` to prevent internal process deadlocks from Hugging Face's tokenizer module.
+
+### Updating the Catalog (articles.json)
+If you add, remove, or modify any items within `data/articles.json`, the FAISS vector database will go out of sync (the "Ghost Index" issue). 
+
+To synchronize the AI with the new catalog, you must manually rebuild the index before booting the server:
+```bash
+python build_index.py
+```
+This script will recalculate the 384-dimensional embeddings for all items and overwrite the `faiss.index` block.
 
 ### Running the Server
 
