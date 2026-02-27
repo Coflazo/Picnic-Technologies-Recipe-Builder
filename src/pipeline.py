@@ -16,10 +16,35 @@ from .models import (
     load_catalog,
 )
 from .parser import parse_recipe
-from .reranker import rerank_candidates
-from .solver import solve_ingredient, _calculate_packs
+from .solver import solve_ingredient
 
 logger = logging.getLogger(__name__)
+
+def apply_price_tier(candidates: list[dict], tier: str) -> dict | None:
+    if not candidates:
+        return None
+
+    # Step 1: Semantic Guardrail
+    # Get the cosine similarity score of the absolute best mathematical match
+    max_score = candidates[0]["score"]
+    
+    # Keep only items that are at least 90 percent as accurate as the top match
+    valid_candidates = [c for c in candidates if c["score"] >= (max_score * 0.90)]
+    
+    # Step 2: Tiered Execution
+    tier_lower = tier.lower()
+    if tier_lower == "low":
+        # Return the absolute cheapest item per unit in the valid pool
+        return min(valid_candidates, key=lambda x: x["article"].price_per_unit)
+    
+    elif tier_lower == "high":
+        # Return the absolute most expensive item per unit in the valid pool
+        return max(valid_candidates, key=lambda x: x["article"].price_per_unit)
+    
+    else:
+        # Medium tier: Stick to the original best semantic match (index 0)
+        return valid_candidates[0]
+
 
 class RecipeBuilderPipeline:
     def __init__(self, global_state: dict):
@@ -70,63 +95,30 @@ class RecipeBuilderPipeline:
         t2 = time.perf_counter()
 
         for ingredient in ingredients:
-            candidates = bulk_matches.get(ingredient.name, [])
+            raw_candidates = bulk_matches.get(ingredient.name, [])
 
-            if not candidates:
+            if not raw_candidates:
                 continue
 
-            # Step 1: Semantic Guardrail (Dynamic Thresholding)
-            s_max = candidates[0][1]
-            valid_candidates = [c for c in candidates if c[1] >= 0.90 * s_max]
+            # Convert to dict format for the Tiered Bracket Algorithm
+            matches = [{"article": art, "score": score} for art, score in raw_candidates]
 
-            # Step 2: The Tiered Execution Logic
-            if price_tier == PriceTier.LOW:
-                # Bypass re-ranker, grab absolute minimum price
-                best_candidate = min(valid_candidates, key=lambda x: x[0].price_per_unit)
-                item = solve_ingredient(ingredient, [best_candidate], price_tier=price_tier)
-                if item:
-                    item.rerank_score = best_candidate[1]
-                    items.append(item)
-                    
-            elif price_tier == PriceTier.HIGH:
-                # Bypass re-ranker, grab absolute maximum price
-                best_candidate = max(valid_candidates, key=lambda x: x[0].price_per_unit)
-                item = solve_ingredient(ingredient, [best_candidate], price_tier=price_tier)
-                if item:
-                    item.rerank_score = best_candidate[1]
-                    items.append(item)
-                    
-            else:
-                # MEDIUM: Run the Multi-Criteria Re-Ranker formula
-                candidates_with_packs = []
-                for article, score in valid_candidates:
-                    result = _calculate_packs(
-                        ingredient.amount,
-                        article.quantity_value,
-                        ingredient.unit,
-                        article.quantity_unit,
-                    )
-                    if result:
-                        packs, _, _ = result
-                        candidates_with_packs.append((article, score, packs))
-                    else:
-                        # if the math fails, just buy 1
-                        candidates_with_packs.append((article, score, 1))
+            # Pass the list of FAISS matches AND the requested price tier to the new function
+            best_match = apply_price_tier(matches, price_tier.value)
 
-                # sort them so the good options bubble to the top
-                reranked = rerank_candidates(ingredient, candidates_with_packs)
-
-                # pick the best one that fits our budget
-                reranked_as_candidates = [(art, cos) for art, cos, _, _ in reranked]
+            if best_match:
+                selected_article = best_match["article"]
+                selected_score = best_match["score"]
+                
+                # Pass the single selected article to the solver to calculate exact packs needed
                 item = solve_ingredient(
                     ingredient,
-                    reranked_as_candidates,
+                    [(selected_article, selected_score)],
                     price_tier=price_tier,
                 )
 
                 if item:
-                    if reranked:
-                        item.rerank_score = reranked[0][3]
+                    item.rerank_score = selected_score
                     items.append(item)
 
         t_solver = (time.perf_counter() - t2) * 1000
