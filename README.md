@@ -235,3 +235,7 @@ curl -X POST http://localhost:8000/api/shopping-list \
 Building scalable AI requires a careful balance between execution speed and robust logical constraints. By combining the strengths of local semantic representation (SentenceTransformers) with deterministic economic routing (the Tiered Bracket Algorithm), we can deliver experiences that are both mathematically precise and computationally efficient.
 
 Thank you again to Maya Budhdeo and the entire Picnic team for the inspiration.
+
+<p align="center">
+  <img src="https://media.tenor.com/BMSyfCkggfQAAAAM/picnic-picnicapp.gif" alt="Picnic Logo Animation" />
+</p>
