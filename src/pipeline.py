@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 import time
-from typing import Optional
+from typing import Optional, Any
 
 from .matcher import ArticleMatcher
 from .models import (
@@ -20,16 +20,28 @@ from .solver import solve_ingredient
 
 logger = logging.getLogger(__name__)
 
-def apply_price_tier(candidates: list[dict], tier: str) -> dict | None:
+def apply_price_tier(candidates: list[Any], tier: str) -> dict | None:
+    """
+    Filters candidates using a semantic guardrail (90% threshold),
+    then sorts by unit price based on the selected tier.
+    """
     if not candidates:
         return None
 
+    # Safely normalize the candidates to a list of dicts regardless of FAISS output type
+    normalized_candidates = []
+    for c in candidates:
+        if isinstance(c, tuple) and len(c) == 2:
+            normalized_candidates.append({"article": c[0], "score": c[1]})
+        elif isinstance(c, dict):
+            normalized_candidates.append(c)
+
+    if not normalized_candidates:
+        return None
+
     # Step 1: Semantic Guardrail
-    # Get the cosine similarity score of the absolute best mathematical match
-    max_score = candidates[0]["score"]
-    
-    # Keep only items that are at least 90 percent as accurate as the top match
-    valid_candidates = [c for c in candidates if c["score"] >= (max_score * 0.90)]
+    max_score = normalized_candidates[0]["score"]
+    valid_candidates = [c for c in normalized_candidates if c["score"] >= (max_score * 0.90)]
     
     # Step 2: Tiered Execution
     tier_lower = tier.lower()
@@ -42,7 +54,7 @@ def apply_price_tier(candidates: list[dict], tier: str) -> dict | None:
         return max(valid_candidates, key=lambda x: x["article"].price_per_unit)
     
     else:
-        # Medium tier: Stick to the original best semantic match (index 0)
+        # Medium tier: Stick to the original best semantic match
         return valid_candidates[0]
 
 
@@ -67,7 +79,8 @@ class RecipeBuilderPipeline:
         console.print(f"\n[bold #eeeeee]New Recipe Request[/bold #eeeeee] (Tier: [#198917]{price_tier.value.upper()}[/#198917])")
         
         t0 = time.perf_counter()
-        # extract stuff from the text
+        
+        # 1. NLP Extraction
         ingredients = self.parse(recipe_text)
         t_nlp = (time.perf_counter() - t0) * 1000
         
@@ -84,7 +97,7 @@ class RecipeBuilderPipeline:
 
         console.print(f"  [#198917]OK[/#198917] [#eeeeee]NLP Zero-Shot Extraction: {len(ingredients)} items ({t_nlp:.1f}ms)[/#eeeeee]")
 
-        # grab all names and do one giant fast matrix lookup 
+        # 2. Batched Vector Search
         ingredient_names = [ing.name for ing in ingredients]
         
         t1 = time.perf_counter()
@@ -94,23 +107,27 @@ class RecipeBuilderPipeline:
 
         t2 = time.perf_counter()
 
-        for ingredient in ingredients:
-            raw_candidates = bulk_matches.get(ingredient.name, [])
+        # Check if match_bulk returned a dict or a list to iterate safely
+        is_dict_matches = isinstance(bulk_matches, dict)
+
+        # 3. Apply Tiering and Constraints
+        for i, ingredient in enumerate(ingredients):
+            if is_dict_matches:
+                raw_candidates = bulk_matches.get(ingredient.name, [])
+            else:
+                raw_candidates = bulk_matches[i] if i < len(bulk_matches) else []
 
             if not raw_candidates:
                 continue
 
-            # Convert to dict format for the Tiered Bracket Algorithm
-            matches = [{"article": art, "score": score} for art, score in raw_candidates]
-
-            # Pass the list of FAISS matches AND the requested price tier to the new function
-            best_match = apply_price_tier(matches, price_tier.value)
+            # Pass the raw candidates to the tiering algorithm
+            best_match = apply_price_tier(raw_candidates, price_tier.value)
 
             if best_match:
                 selected_article = best_match["article"]
                 selected_score = best_match["score"]
                 
-                # Pass the single selected article to the solver to calculate exact packs needed
+                # Hand off the finalized selection to the solver
                 item = solve_ingredient(
                     ingredient,
                     [(selected_article, selected_score)],
@@ -125,9 +142,11 @@ class RecipeBuilderPipeline:
         console.print(f"  [#198917]OK[/#198917] [#eeeeee]Neural Re-ranking & Constraints: ({t_solver:.1f}ms)[/#eeeeee]")
 
         console.print("\n  [bold #eeeeee]Matches:[/bold #eeeeee]")
+        total_cost = 0.0
         for item in items:
             prefix = "[dim]opt[/dim]" if item.is_optional else "[#198917]req[/#198917]"
             console.print(f"  - ({prefix}) [#198917]{item.ingredient_name}[/#198917]: [#eeeeee]{item.article.raw_name} ({item.article.brand}) - €{item.total_price:.2f}[/#eeeeee]")
+            total_cost += item.total_price
 
         t_total = (time.perf_counter() - t0) * 1000
         console.print(f"\n  [bold #eeeeee]Total Execution Time:[/bold #eeeeee] [#198917]{t_total:.1f}ms[/#198917]\n")
@@ -138,6 +157,10 @@ class RecipeBuilderPipeline:
             recipe_text=recipe_text,
             parsed_ingredients_count=len(ingredients),
         )
-        shopping_list.compute_total()
+        
+        # Ensure total is strictly calculated from the final items
+        shopping_list.total_price = round(total_cost, 2)
+        if hasattr(shopping_list, 'compute_total'):
+            shopping_list.compute_total()
 
         return shopping_list
