@@ -14,11 +14,9 @@
 
 ## Acknowledgments & Context
 
-This project was born out of a Picnic Technologies in-house day. During discussions, the team mentioned they were actively working on an AI feature to parse user-generated recipes and automatically add the correct items to the shopping basket. I stated that a highly functional, low-latency Proof of Concept (PoC) could be constructed in a single day. 
+This project was born out of a Picnic Technologies in-house day. During discussions, the team mentioned they were actively working on an AI feature to parse user-generated recipes and automatically add the correct items to the shopping basket. This repository serves as a focused Proof of Concept (PoC) exploring low-latency vector retrieval and dynamic economic constraints to solve that exact challenge. 
 
-This repository is that delivered promise. 
-
-A massive thank you to the Picnic Technologies engineering team, and specifically to Maya Budhdeo, for providing the technical insights, context, and the opportunity to tackle this challenge. 
+A sincere thank you to the Picnic Technologies engineering team, and specifically to Maya Budhdeo, for providing the technical insights, context, and the incredible opportunity to explore this architecture. 
 
 ## The Problem Statement
 
@@ -234,6 +232,6 @@ curl -X POST http://localhost:8000/api/shopping-list \
 
 ## Closing Thoughts
 
-Building scalable AI requires rigorous adherence to execution speed, and prioritizing robust constraints logic over arbitrary prompt engineering.
+Building scalable AI requires a careful balance between execution speed and robust logical constraints. By combining the strengths of local semantic representation (SentenceTransformers) with deterministic economic routing (the Tiered Bracket Algorithm), we can deliver experiences that are both mathematically precise and computationally efficient.
 
-Thank you again to Maya Budhdeo and the entire Picnic team for the challenge.
+Thank you again to Maya Budhdeo and the entire Picnic team for the inspiration.
