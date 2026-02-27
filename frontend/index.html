@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picnic Recipe Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <img src="https://images.ctfassets.net/8vofjvai1hpv/6kPVsBovtEASHsV9zTvq5n/09ccafc8e3bf48186cf37927fdaa37c2/logo-Picnic.png?w=525&h=225&q=90&fm=png&bg=transparent"
+                alt="Picnic Logo" class="logo">
+            <h1>Recipe Builder</h1>
+        </header>
+
+        <section class="input-section">
+            <textarea id="recipeInput" placeholder="Paste your recipe here..."></textarea>
+
+            <div class="controls">
+                <select id="tierSelect">
+                    <option value="low">Budget</option>
+                    <option value="medium" selected>Standard</option>
+                    <option value="high">Premium</option>
+                </select>
+                <button id="submitBtn">Generate Shopping List</button>
+            </div>
+        </section>
+
+        <section id="loadingState" class="hidden">
+            <div class="preloader">
+                <svg class="cart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128"
+                    width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                        <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+                            <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+                            <circle cx="43" cy="111" r="13" />
+                            <circle cx="102" cy="111" r="13" />
+                        </g>
+                        <g class="cart__lines" stroke="currentColor">
+                            <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80"
+                                stroke-dasharray="338 338" stroke-dashoffset="-338" />
+                            <g class="cart__wheel1" transform="rotate(-90,43,111)">
+                                <circle class="cart__wheel-stroke" cx="43" cy="111" r="13"
+                                    stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                            </g>
+                            <g class="cart__wheel2" transform="rotate(90,102,111)">
+                                <circle class="cart__wheel-stroke" cx="102" cy="111" r="13"
+                                    stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <div class="preloader__text">
+                    <p class="preloader__msg">Bringing you the goods…</p>
+                    <p class="preloader__msg preloader__msg--last">This is taking long. Something’s wrong.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resultsSection" class="hidden">
+            <div id="resultsList"></div>
+            <div class="summary">
+                <span>Total: <strong id="summaryTotal">€0.00</strong></span>
+            </div>
+        </section>
+
+        <div id="helpModal" class="help-modal hidden">
+            <button id="closeHelpBtn" class="close-btn">&times;</button>
+            <h3>How to Use</h3>
+            <p>Please write your recipe in any unstructured format to the box. Then select your preferred price tier,
+                then please click generate, and at the end when the results are out here you can click into them to view
+                more details.</p>
+        </div>
+
+        <div id="helpBtn" class="help-bubble">?</div>
+    </main>
+    <script src="main.js?v=2"></script>
+</body>
+
+</html>
