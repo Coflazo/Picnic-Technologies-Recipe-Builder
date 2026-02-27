@@ -78,6 +78,8 @@ At runtime, user ingredients are vectorized and mapped against the index using F
 ### The Semantic-Bounded Price Sort (Tiered Bracket Algorithm)
 Handling the "Budget Tier" requirement is complex. If a system simply sorts the FAISS results by price, a request for "Chicken Breast" might return "Chicken Bouillon Cubes" purely because they are cheaper and share the word "chicken".
 
+> **Note**: The budget tier logic is currently a lightweight proof-of-concept. It was implemented as a fun, experimental idea to explore economic constraints alongside semantic search. It might not work perfectly in every edge case yet, but expect more robust refinements in future updates! ;)
+
 To resolve this, the pipeline executes a Semantic Bounding Box. It extracts the absolute highest cosine similarity score from the FAISS candidates ($S_{max}$). It then immediately drops any candidate whose score falls below 90% of that top match. 
 
 This creates a highly-filtered, semantically pristine pool of essentially identical products (e.g., Budget Avocado, Standard Avocado, Premium Avocado). 
