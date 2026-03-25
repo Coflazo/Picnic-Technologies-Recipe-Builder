@@ -16,7 +16,7 @@ def main():
     print(f"Found {len(articles)} food items.")
 
     print("Loading ONNX models...")
-    tokenizer = AutoTokenizer.from_pretrained("onnx_model")
+    tokenizer = AutoTokenizer.from_pretrained("onnx_model", local_files_only=True)
     model = ort.InferenceSession("onnx_model/model.onnx", providers=['CPUExecutionProvider'])
     
     print("Computing 384d semantic vectors...")
