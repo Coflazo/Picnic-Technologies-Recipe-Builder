@@ -70,7 +70,6 @@ async def lifespan(app: FastAPI):
     
     onnx_model_dir = _PROJECT_ROOT / "onnx_model"
     onnx_model_path = onnx_model_dir / "model.onnx"
-    _require_file(onnx_model_dir, "ONNX model directory")
     _require_file(onnx_model_path, "ONNX model file")
     GLOBAL_STATE["tokenizer"] = AutoTokenizer.from_pretrained(str(onnx_model_dir), local_files_only=True)
     GLOBAL_STATE["onnx_model"] = ort.InferenceSession(str(onnx_model_path), providers=['CPUExecutionProvider'])
