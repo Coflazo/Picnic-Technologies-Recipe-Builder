@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import logging
-import os
 import json
 import faiss
 from contextlib import asynccontextmanager
@@ -11,7 +10,6 @@ from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
@@ -19,6 +17,14 @@ from .models import Article, ParsedIngredient, PriceTier, ShoppingList, load_cat
 from .pipeline import RecipeBuilderPipeline
 
 logger = logging.getLogger(__name__)
+
+
+def _require_file(path: Path, description: str) -> None:
+    if not path.exists():
+        raise RuntimeError(
+            f"Missing required {description}: {path}. "
+            "Please follow the README setup steps to provide local model/index assets."
+        )
 
 # schemas for request/response
 class ParseRequest(BaseModel):
@@ -49,18 +55,24 @@ async def lifespan(app: FastAPI):
     GLOBAL_STATE["article_map"] = {a.article_id: a for a in articles}
     console.print(f"  [#198917]OK[/#198917] [#eeeeee]Normalized Catalog loaded ({len(articles)} items)[/#eeeeee]")
     
-    faiss_path = str(_PROJECT_ROOT / "data" / "index" / "faiss.index")
-    GLOBAL_STATE["faiss_index"] = faiss.read_index(faiss_path)
+    faiss_path = _PROJECT_ROOT / "data" / "index" / "faiss.index"
+    article_ids_path = _PROJECT_ROOT / "data" / "index" / "article_ids.json"
+    _require_file(faiss_path, "FAISS index")
+    _require_file(article_ids_path, "article id map")
+    GLOBAL_STATE["faiss_index"] = faiss.read_index(str(faiss_path))
     
-    with open(_PROJECT_ROOT / "data" / "index" / "article_ids.json", "r") as f:
+    with open(article_ids_path, "r") as f:
         GLOBAL_STATE["article_ids"] = json.load(f)
     console.print("  [#198917]OK[/#198917] [#eeeeee]FAISS Vector Engine mapped[/#eeeeee]")
         
     from transformers import AutoTokenizer
     import onnxruntime as ort
     
-    GLOBAL_STATE["tokenizer"] = AutoTokenizer.from_pretrained(str(_PROJECT_ROOT / "onnx_model"))
-    GLOBAL_STATE["onnx_model"] = ort.InferenceSession(str(_PROJECT_ROOT / "onnx_model" / "model.onnx"), providers=['CPUExecutionProvider'])
+    onnx_model_dir = _PROJECT_ROOT / "onnx_model"
+    onnx_model_path = onnx_model_dir / "model.onnx"
+    _require_file(onnx_model_path, "ONNX model file")
+    GLOBAL_STATE["tokenizer"] = AutoTokenizer.from_pretrained(str(onnx_model_dir), local_files_only=True)
+    GLOBAL_STATE["onnx_model"] = ort.InferenceSession(str(onnx_model_path), providers=['CPUExecutionProvider'])
     console.print("  [#198917]OK[/#198917] [#eeeeee]ONNX Embedding Model & Pipeline ready[/#eeeeee]")
     
     from gliner import GLiNER
