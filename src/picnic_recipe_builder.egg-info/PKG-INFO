@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: picnic-recipe-builder
+Version: 1.0.0
+Summary: AI-powered recipe-to-shopping-list for Picnic Technologies
+Requires-Python: >=3.10
+Requires-Dist: fastapi>=0.115.0
+Requires-Dist: uvicorn[standard]>=0.30.0
+Requires-Dist: sentence-transformers>=3.0.0
+Requires-Dist: transformers>=4.41.0
+Requires-Dist: onnxruntime>=1.18.0
+Requires-Dist: gliner>=0.2.16
+Requires-Dist: faiss-cpu>=1.8.0
+Requires-Dist: spacy>=3.7.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: rich>=13.7.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: httpx>=0.27.0; extra == "dev"
