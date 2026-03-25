@@ -161,10 +161,12 @@ source .venv/bin/activate
 
 3. Install the dependencies utilizing `pip`:
 ```bash
-pip install -r requirements.txt
+pip install -e .
 ```
 
 > Note: If building the FAISS index on macOS, ensure you prefix your scripts with `TOKENIZERS_PARALLELISM=false` to prevent internal process deadlocks from Hugging Face's tokenizer module.
+
+> Note: This repository intentionally does **not** commit heavyweight model artifacts. You must provide a local `onnx_model/` directory (with tokenizer files and `model.onnx`) before running `python run.py` or `python build_index.py`.
 
 ### Updating the Catalog (articles.json)
 If you add, remove, or modify any items within `data/articles.json`, the FAISS vector database will go out of sync (the "Ghost Index" issue). 
