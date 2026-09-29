@@ -1,8 +1,6 @@
-<p align="center">
-  <img src="https://images.ctfassets.net/8vofjvai1hpv/6kPVsBovtEASHsV9zTvq5n/09ccafc8e3bf48186cf37927fdaa37c2/logo-Picnic.png?w=525&h=225&q=90&fm=png&bg=transparent" alt="Picnic Logo" width="300" />
-</p>
+# Picnic Technologies Recipe Builder PoC
 
-<h1 align="center">Picnic Technologies Recipe Builder PoC</h1>
+This project was born out of a Picnic Technologies in-house day. During discussions, the team mentioned they were actively working on an AI feature to parse user-generated recipes and automatically add the correct items to the shopping basket. This repository serves as a focused Proof of Concept (PoC) exploring low-latency vector retrieval and dynamic economic constraints to solve that exact challenge. 
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
@@ -12,9 +10,7 @@
   <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
 </p>
 
-## Acknowledgments & Context
-
-This project was born out of a Picnic Technologies in-house day. During discussions, the team mentioned they were actively working on an AI feature to parse user-generated recipes and automatically add the correct items to the shopping basket. This repository serves as a focused Proof of Concept (PoC) exploring low-latency vector retrieval and dynamic economic constraints to solve that exact challenge. 
+## Acknowledgments
 
 A sincere thank you to the Picnic Technologies engineering team, and specifically to Maya Budhdeo, for providing the technical insights, context, and the incredible opportunity to explore this architecture. 
 
